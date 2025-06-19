@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Fullscreen Site</title>
+  <style>
+    /* Reset default margin and height */
+    html, body {
+      margin: 0; height: 100%; overflow: hidden;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: black;
+    }
+
+    /* Fullscreen container */
+    .fullscreen {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Overlay text */
+    .overlay-text {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      font-size: 3vw;
+      text-shadow: 2px 2px 8px black;
+    }
+
+    /* Video styling */
+    video {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background video (optional) -->
+  <video autoplay muted loop>
+    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
+    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Fullscreen background image (fallback) -->
+  <div class="fullscreen" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80');"></div>
+
+  <!-- Text overlay -->
+  <div class="overlay-text">Welcome to My Fullscreen GitHub Pages Site!</div>
+</body>
+</html>
