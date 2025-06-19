@@ -27,7 +27,7 @@
     }
 
     /* Overlay text */
-    .overlay-text {
+    .overlay-text-top {
       position: absolute;
       top: 33%;
       left: 50%;
@@ -36,6 +36,18 @@
       font-size: 3vw;
       text-align: center;
       text-shadow: 2px 2px 8px black;
+      pointer-events: none;
+    }
+    .overlay-text-bottom {
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      font-size: 2vw;
+      text-align: center;
+      text-shadow: 2px 2px 8px black;
+      pointer-events: none;
     }
 
     /* Video styling */
@@ -61,7 +73,7 @@
   <div class="fullscreen" style="background-image: url('media/citw background image 2.png');"></div>
 
   <!-- Text overlay -->
-  <div class="overlay-text">A story about secrets, lies, and power. Who can you trust?
-  <br>Coming soon</div>
+  <div class="overlay-text-top">A story about secrets, lies, and power. Who can you trust?</div>
+  <div class="overlay-text-bottom">Coming soon</div>
 </body>
 </html>
