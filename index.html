@@ -8,7 +8,7 @@
     /* Reset default margin and height */
     html, body {
       margin: 0; height: 100%; overflow: hidden;
-      font-family: Arial, sans-serif;
+      font-family: Garamond, serif;
       color: white;
       background: black;
     }
@@ -29,9 +29,12 @@
     /* Overlay text */
     .overlay-text {
       position: absolute;
-      top: 20px;
+      top: 33%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 100%;
       font-size: 3vw;
+      text-align: center;
       text-shadow: 2px 2px 8px black;
     }
 
@@ -48,16 +51,16 @@
 </head>
 <body>
   <!-- Background video (optional) -->
-  <video autoplay muted loop>
+<!--   <video autoplay muted loop>
     <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
     <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
     Your browser does not support the video tag.
-  </video>
+  </video> -->
 
   <!-- Fullscreen background image (fallback) -->
   <div class="fullscreen" style="background-image: url('media/citw background image 2.png');"></div>
 
   <!-- Text overlay -->
-  <div class="overlay-text">Coming soon</div>
+  <div class="overlay-text">A story about secrets, lies, and power. Who can you trust?</div>
 </body>
 </html>
